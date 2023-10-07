@@ -96,7 +96,7 @@
                             <input required class="border border-black rounded p-2"   onkeypress="return onlyNumbers(event)" id='price_${counter}' readonly onchange='handleCart(${counter})' >
                         </td>
                         <td class='border-b border-slate-100 py-4'>
-                            <input required class="border border-black rounded p-2"   onkeypress="return onlyNumbers(event)" id='total_${counter}' readonly onchange='handleCart(${counter})'>
+                            <input required class="total border border-black rounded p-2"   onkeypress="return onlyNumbers(event)" id='total_${counter}' readonly onchange='handleCart(${counter})'>
                         </td>
                         <td class='border-b border-slate-100 py-4'>
                             <button type="button" onclick="handleDelete(this)">
@@ -147,15 +147,17 @@
         function handleDelete(el) {
             var i = el.parentNode.parentNode.rowIndex;
             document.querySelector("#tbl").deleteRow(i)
+            countTotal()
         }
 
         function countTotal() {
             const tbl = document.querySelector("#tbl tbody")
-            const currRow = tbl.rows.length
+            const currRow = document.querySelectorAll(".total")
             let local_total = 0
 
-            for (let i = 0; i < currRow; i++) {
-                const total = document.querySelector(`#total_${i+1}`).value
+            for (let i = 0; i < currRow.length; i++) {
+                const id = currRow[i].id
+                const total = document.querySelector(`#${id}`).value
                 local_total += Number(total)
             }
 

@@ -50,7 +50,8 @@
             <button class="py-2 px-3 text-white rounded-lg font-semibold bg-blue-500 w-fit  mt-10 mb-5">Update
                 Product
             </button>
-            <a href="/product" class="py-2 px-3 text-black rounded-lg font-semibold bg-white border w-fit  mt-10 mb-5">
+            <a href={{ route('product.index') }}
+                class="py-2 px-3 text-black rounded-lg font-semibold bg-white border w-fit  mt-10 mb-5">
                 Cancel
             </a>
         </div>

@@ -1,4 +1,4 @@
-@extends('components.layout')
+@extends('app')
 @section('content')
     <h1 class="text-3xl font-bold">Patient</h1>
     <a href="{{ route('patient.create') }}"

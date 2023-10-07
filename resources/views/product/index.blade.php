@@ -1,4 +1,4 @@
-@extends('components.layout')
+@extends('app')
 @section('content')
     <div class="flex flex-col ">
         <h1 class="text-3xl font-bold">Product</h1>

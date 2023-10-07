@@ -1,4 +1,4 @@
-@extends('components.layout')
+@extends('app')
 @section('content')
     <h1 class="text-3xl font-bold">Create Product</h1>
     <form class="flex flex-col gap-2 mt-10" method="POST" action="{{ route('product.store') }}">

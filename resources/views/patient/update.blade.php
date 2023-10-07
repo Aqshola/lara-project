@@ -1,4 +1,4 @@
-@extends('components.layout')
+@extends('app')
 @section('content')
     <h1 class="text-3xl font-bold">Update Patient</h1>
     <form class="flex flex-col gap-2 mt-10" method="POST" action="{{ route('patient.update', $data['patient_id']) }}">

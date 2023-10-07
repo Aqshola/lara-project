@@ -1,4 +1,4 @@
-@extends('components.layout')
+@extends('app')
 @section('content')
     <h1 class="text-3xl font-bold">Invoice</h1>
     <div class="flex gap-2">

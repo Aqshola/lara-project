@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <nav class="w-full bg-blue-200 max-w-screen-2xl mx-auto p-3 flex justify-between">

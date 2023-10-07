@@ -9,8 +9,16 @@
         "dest": "/public/build/"
       },
       {
+        "src": "/assets/(.*)",
+        "dest": "/public/"
+      },
+      {
         "src": "/resources/(.*)",
         "dest": "/resources/"
+      },
+      {
+        "src": "/favicon/(.*)",
+        "dest": "/public/"
       },
       {
         "src": "/(.*)",

@@ -1,8 +1,5 @@
 {
     "version": 2,
-    "functions": {
-      "routes/web.php": { "runtime": "vercel-php@0.5.3" }
-    },
     "routes": [
       {
         "src": "/build/(.*)",

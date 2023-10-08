@@ -19,6 +19,7 @@
         <div class="flex gap-2 justify-center mt-5 text-lg">
             <a href="/product">Product</a>
             <a href="/patient">Patient</a>
+            <a href="/invoice">Patient</a>
         </div>
     </div>
 </body>
